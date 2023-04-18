@@ -17,7 +17,7 @@ refs.inputField.addEventListener(
 );
 
 function onInputChange(evt) {
-  if (evt.target.value === '') {
+  if (evt.target.value.trim() === '') {
     return;
   } else {
     fetchCountries(refs.inputField.value.trim())
